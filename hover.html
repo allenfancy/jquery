@@ -1,0 +1,111 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>add Class</title> 
+<script type="text/javascript" src="jquery-1.1.3.pack.js" language="javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#orderedlist li").hover(function(){
+			$(this).addClass("blue");
+		},function(){
+			$(this).removeClass("blue")
+		});
+
+		$("#tableHover tbody tr").hover(function(){
+			$(this).addClass("blue");
+		},function(){
+			$(this).removeClass("blue");
+		});
+	});
+</script>
+<style type="text/css">
+
+.blue {
+        background:#bcd4ec;  
+}
+</style>
+
+</head>
+<body>
+<ul id="orderedlist">
+<li>a</li>
+<li>b</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+</ul>
+
+
+<ul id="ordered">
+<li>a</li>
+<li>b</li>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+<li>g</li>
+<li>h</li>
+</ul>
+
+
+<hr>
+<hr>
+<hr>
+<hr>
+<table id="tableHover" width="50%" border="0" cellspacing="0" cellpadding="0"> 
+<!--用class="stripe"来标识需要使用该效果的表格-->
+<thead>
+  <tr>
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>QQ</th>
+    <th>Email</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>邓国梁</td>
+    <td>23</td>
+    <td>31540205</td>
+    <td>gl.deng@gmail.com</td>
+  </tr>
+  <tr>
+    <td>邓国梁</td>
+    <td>23</td>
+    <td>31540205</td>
+    <td>gl.deng@gmail.com</td>
+  </tr>
+  <tr>
+    <td>邓国梁</td>
+    <td>23</td>
+    <td>31540205</td>
+    <td>gl.deng@gmail.com</td>
+  </tr>
+  <tr>
+    <td>邓国梁</td>
+    <td>23</td>
+    <td>31540205</td>
+    <td>gl.deng@gmail.com</td>
+  </tr>
+  <tr>
+    <td>邓国梁</td>
+    <td>23</td>
+    <td>31540205</td>
+    <td>gl.deng@gmail.com</td>
+  </tr>
+  <tr>
+    <td>邓国梁</td>
+    <td>23</td>
+    <td>31540205</td>
+    <td>gl.deng@gmail.com</td>
+  </tr>
+</tbody>
+</table>
+
+
+</body>
+
+</html>
